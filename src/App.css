@@ -1,0 +1,19 @@
+:root {
+  --background-app: #f8f9fa;
+  --font-Helvetica: "Helvetica", sans-serif;
+  --color-text-light: #A0AEC0;
+  --color-text-bold: #2D3748;
+  --color-white: #ffffff;
+  --accent-color: teal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-Helvetica);
+  color: var(--color-text-light);
+  background-color: var(--background-app);
+}
