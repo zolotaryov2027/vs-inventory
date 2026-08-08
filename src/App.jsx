@@ -1,6 +1,7 @@
 import "./App.css";
-import { FaBuilding, FaUserLarge  } from "react-icons/fa6";
+import { FaBuilding, FaUserLarge } from "react-icons/fa6";
 import NavBar from "./components/navBar/navBar";
+import Header from "./components/header/header";
 const navigationLinks = [
   {
     text: "Помещения",
@@ -14,9 +15,10 @@ const navigationLinks = [
 
 function App() {
   return (
-    <>
+    <div className="wrapper">
+      <Header />
       <NavBar links={navigationLinks} />
-    </>
+    </div>
   );
 }
 
