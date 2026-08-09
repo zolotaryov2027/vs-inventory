@@ -1,4 +1,4 @@
-.search_wrapper {
+.search-form {
   position: relative;
 }
 
@@ -11,6 +11,10 @@
 
 .search-input::placeholder {
   color: var(--color-text-light);
+}
+
+.search-input:focus + .search_icon svg {
+  color: var(--color-text-bold);
 }
 
 .search_icon {
