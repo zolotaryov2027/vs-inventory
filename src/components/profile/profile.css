@@ -1,0 +1,44 @@
+.profile__wrapper {
+  display: flex;
+  margin: 0 10px;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+}
+
+.profile__wrapper button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin: 0 10px;
+  color: var(--color-text-bold);
+  transition: opacity ease-in-out 0.1s;
+}
+
+.login-icon {
+  padding-right: 10px;
+}
+
+.login:hover {
+  opacity: 0.7;
+}
+
+.login:hover .login-icon svg {
+  opacity: 0.7;
+}
+
+.settings:hover .settings-icon svg,
+.notifications:hover .notifications-icon svg {
+  opacity: 0.7;
+}
+
+.login-icon svg,
+.settings svg,
+.notifications svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color-text-bold);
+  transition: opacity ease-in-out 0.1s;
+}

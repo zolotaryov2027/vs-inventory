@@ -1,5 +1,6 @@
 import { PiScalesFill } from "react-icons/pi";
 import Search from "../search/search";
+import Profile from "../profile/profile";
 import "./header.css";
 export default function header() {
   return (
@@ -15,6 +16,7 @@ export default function header() {
         </div>
         <div className="column column__right">
           <Search />
+          <Profile />
         </div>
       </div>
     </header>
