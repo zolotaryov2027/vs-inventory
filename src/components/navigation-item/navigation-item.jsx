@@ -1,10 +1,13 @@
 import "./navigation-item.css";
-export default function navigationItem({ textLink, icon }) {
+import { NavLink } from "react-router";
+export default function navigationItem({ textLink, icon, link }) {
   return (
     <>
       <li className="navigation-item">
-        <span className="navigation-item__icon">{icon}</span>
-        <a className="navigation-item__link">{textLink}</a>
+        <NavLink to={link} className="navigation-item__link">
+          <span className="navigation-item__icon">{icon}</span>
+          {textLink}
+        </NavLink>
       </li>
     </>
   );

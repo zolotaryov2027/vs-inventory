@@ -6,7 +6,11 @@ export default function NavBar({ links }) {
     <nav className="navbar">
       <ul className="nav-list">
         {links.map((link) => (
-          <NavigationItem textLink={link.text} icon={link.icon} />
+          <NavigationItem
+            textLink={link.text}
+            icon={link.icon}
+            link={link.link}
+          />
         ))}
       </ul>
     </nav>

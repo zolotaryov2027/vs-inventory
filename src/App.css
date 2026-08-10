@@ -1,8 +1,8 @@
 :root {
   --background-app: #f8f9fa;
   --font-Helvetica: "Helvetica", sans-serif;
-  --color-text-light: #A0AEC0;
-  --color-text-bold: #2D3748;
+  --color-text-light: #a0aec0;
+  --color-text-bold: #2d3748;
   --color-white: #ffffff;
   --accent-color: teal;
 }
@@ -16,4 +16,12 @@ body {
   font-family: var(--font-Helvetica);
   color: var(--color-text-light);
   background-color: var(--background-app);
+}
+
+.wrapper .index-columns {
+  display: flex;
+}
+
+.wrapper .index-column__left {
+  margin-right: 50px;
 }
