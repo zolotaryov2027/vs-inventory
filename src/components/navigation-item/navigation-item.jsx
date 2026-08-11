@@ -1,6 +1,6 @@
 import "./navigation-item.css";
 import { NavLink } from "react-router";
-export default function navigationItem({ textLink, icon, link }) {
+const navigationItem = ({ textLink, icon, link }) => {
   return (
     <>
       <li className="navigation-item">
@@ -11,4 +11,6 @@ export default function navigationItem({ textLink, icon, link }) {
       </li>
     </>
   );
-}
+};
+
+export default navigationItem;

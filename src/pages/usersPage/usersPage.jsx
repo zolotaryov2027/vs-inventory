@@ -1,4 +1,5 @@
 import User from "../../components/user/user";
+import Table from "../../components/table/table";
 import "./usersPage.css";
 const users = [
   {
@@ -29,26 +30,26 @@ const users = [
   },
 ];
 
+const usersTableConfig = {
+  tableTitle: "Сотрудники",
+  tableTitleGraph: [
+    "ФИО",
+    "Отдел",
+    "Помещение",
+    "Мобильный телефон",
+    "E-mail",
+    "Стационарный телефон",
+    "Дата рождения",
+    "Статус",
+  ],
+};
+
 const usersPage = () => {
   return (
-    <table className="user-table">
-      <caption>Сотрудники</caption>
-      <thead>
-        <tr>
-          <th>ФИО</th>
-          <th>Отдел</th>
-          <th>Помещение</th>
-          <th>Мобильный телефон</th>
-          <th>E-mail</th>
-          <th>Стационарный телефон</th>
-          <th>Дата рождения</th>
-          <th>Статус</th>
-        </tr>
-      </thead>
-      <tbody>
-        <User users={users} />
-      </tbody>
-    </table>
+    <Table
+      tableConfig={usersTableConfig}
+      tableContent={<User users={users} />}
+    />
   );
 };
 

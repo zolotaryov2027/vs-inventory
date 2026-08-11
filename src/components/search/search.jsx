@@ -1,6 +1,6 @@
 import "./search.css";
 import { IoSearch } from "react-icons/io5";
-export default function search() {
+const search = () => {
   return (
     <form className="search-form" action="/search" method="get">
       <input
@@ -15,4 +15,6 @@ export default function search() {
       </span>
     </form>
   );
-}
+};
+
+export default search;

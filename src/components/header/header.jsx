@@ -2,7 +2,7 @@ import { PiScalesFill } from "react-icons/pi";
 import Search from "../search/search";
 import Profile from "../profile/profile";
 import "./header.css";
-export default function header() {
+const header = () => {
   return (
     <header className="header">
       <div className="columns">
@@ -21,4 +21,6 @@ export default function header() {
       </div>
     </header>
   );
-}
+};
+
+export default header;

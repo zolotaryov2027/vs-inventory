@@ -1,7 +1,7 @@
 import "./navBar.css";
 import NavigationItem from "../navigation-item/navigation-item";
 
-export default function NavBar({ links }) {
+const navBar = ({ links }) => {
   return (
     <nav className="navbar">
       <ul className="nav-list">
@@ -15,4 +15,6 @@ export default function NavBar({ links }) {
       </ul>
     </nav>
   );
-}
+};
+
+export default navBar;
